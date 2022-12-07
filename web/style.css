@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.unsorted {
+  background-color: #880808 !important;
+}
+.unsorted:hover {
+  background-color: #700707 !important;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-auto-rows: 1fr 9fr 2fr;
+  width: 100vw;
+  gap: 0px 0px;
+  height: 100vh;
+}
+
+.one {
+  grid-column: 1/3;
+  grid-row: 1;
+  display: grid;
+  grid-template-columns: 2fr 8fr 2fr;
+  background-color: lightgrey;
+  align-content: center;
+}
+.one .title {
+  display: grid;
+  align-items: center;
+  text-align: center;
+  font-size: 3vh;
+}
+.one .logo {
+  display: grid;
+  grid-auto-flow: column;
+  align-content: center;
+  padding: 5px;
+  height: 100%;
+}
+.one .logo img {
+  height: 9vh;
+  padding-left: 20px;
+}
+.one .list {
+  display: grid;
+  height: 100%;
+  text-align: center;
+}
+.one .list a {
+  border-radius: 25px;
+  padding-bottom: 1px;
+  padding-top: 1px;
+}
+.one .list a:hover {
+  background-color: #04aa6d;
+  transition: all ease 0.25s;
+  color: white;
+}
+
+.two {
+  grid-column: 1;
+  grid-row: 2;
+  display: grid;
+  padding: 10px;
+}
+.two div {
+  padding: 5px;
+}
+.two button {
+  margin: 10px;
+}
+
+.three {
+  grid-column: 2;
+  grid-row: 2;
+  overflow: scroll;
+}
+.three table {
+  padding: 5px;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  border-radius: 5px;
+}
+.three table th, .three table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+.three table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+.three table tr:hover {
+  transition: all ease 0.25s;
+  background-color: #ddd;
+}
+.three table td:hover {
+  transition: all ease 0.25s;
+  background-color: #d5d5d5;
+}
+.three table thead, .three table tfoot {
+  position: -webkit-sticky;
+  position: sticky;
+}
+.three table thead {
+  top: 0;
+}
+.three table tfoot {
+  bottom: 0;
+}
+.three table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #04aa6d;
+  border: none;
+  color: white;
+  width: 50%;
+}
+.three table th:hover {
+  transition: all ease 0.25s;
+  background-color: #03915d;
+}
+.three table td {
+  width: 50%;
+}
+
+.four {
+  grid-column: 1/3;
+  grid-row: 3;
+}
+.four img {
+  width: 100%;
+}/*# sourceMappingURL=style.css.map */

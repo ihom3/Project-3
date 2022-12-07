@@ -1,0 +1,105 @@
+$gsApple: #04aa6d
+$red: #880808
+
+*
+    box-sizing: border-box
+    padding: 0
+    margin: 0
+.unsorted
+    background-color: $red !important
+    &:hover
+        background-color: darken($red, 5) !important
+.wrapper
+    display: grid
+    grid-template-columns: 1fr 2fr
+    grid-auto-rows: 1fr 9fr 2fr 
+    width: 100vw
+    gap: 0px 0px
+    height: 100vh
+.one
+    grid-column: 1 / 3
+    grid-row: 1
+    display: grid
+    grid-template-columns: 2fr 8fr 2fr
+    background-color: lightgrey
+    align-content: center
+    .title
+        display: grid
+        align-items: center
+        text-align: center
+        font-size: 3vh
+    .logo
+        display: grid
+        grid-auto-flow: column
+        align-content: center
+        padding: 5px
+        height: 100%
+        img
+            height: 9vh
+            padding-left: 20px
+    .list
+        display: grid
+        height: 100%
+        text-align: center
+        a
+            border-radius: 25px
+            padding-bottom: 1px
+            padding-top: 1px
+        a:hover
+            background-color: $gsApple
+            transition: all ease 0.25s
+            color: white
+.two
+    grid-column: 1
+    grid-row: 2
+    display: grid
+    padding: 10px
+    div
+        padding: 5px
+    button
+        margin: 10px
+.three
+    grid-column: 2
+    grid-row: 2
+    overflow: scroll
+    table
+        padding: 5px
+        height: 100%
+        width: 100%
+        text-align: center
+        border-radius: 5px
+        th, td
+            border: 1px solid #ddd
+            padding: 10px
+        tr:nth-child(even)
+            background-color: #f2f2f2
+        tr:hover
+            transition: all ease 0.25s
+            background-color: #ddd
+        td:hover
+            transition: all ease 0.25s
+            background-color: darken(#ddd, 3)
+        thead, tfoot
+            position: sticky
+        thead
+            top: 0
+        tfoot
+            bottom: 0
+        th
+            padding-top: 12px
+            padding-bottom: 12px
+            background-color: $gsApple
+            border: none
+            color: white
+            width: 50%
+            &:hover
+                transition: all ease 0.25s
+                background-color: darken($gsApple, 5)
+        td
+            width: 50%
+
+.four
+    grid-column: 1 /3
+    grid-row: 3
+    img
+        width: 100%
